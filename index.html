@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-section">
+            <i class="fas fa-robot logo-icon"></i>
+            <h1 class="title">EchoMate</h1>
+        </div>
+        <div class="status">
+            <i class="fas fa-cloud weather-icon"></i>
+            <span id="weather">Loading...</span>
+            <i class="far fa-clock time-icon"></i>
+            <span id="time">--:--</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="features-title">Features</h2>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Powered</span>
+                </li>
+                <li class="feature-item">
+                    <i class="fas fa-microphone"></i>
+                    <span>Voice Input</span>
+                </li>
+                <li class="feature-item">
+                    <i class="fas fa-language"></i>
+                    <span>Natural Language</span>
+                </li>
+                <li class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <span>24/7 Available</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h2 class="greeting">Hello!</h2>
+
+            <!-- Chat Container -->
+            <div class="chat-container">
+                <div class="message">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="message-content">
+                        How can I assist you today?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="action-button">Tell me a story</button>
+                <button class="action-button">Write an email</button>
+                <button class="action-button">Solve a math problem</button>
+                <button class="action-button">Generate ideas</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+        <div class="input-container">
+            <button class="input-button">
+                <i class="far fa-smile"></i>
+            </button>
+            <input type="text" class="input-field" placeholder="Ask me anything...">
+            <button class="input-button" id="voice-btn">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <button class="input-button send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>• Created by Anisha</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+    <script src="script.js"></script>
+    <script src="weather.js"></script>
+    <script src="time.js"></script>
+</body>
+</html>
